@@ -14,7 +14,7 @@ class Confirmation
   def send_message
     @client.messages.create(
       body: "Thank you! Your order for £#{@total} and will be delivered before 18:52",
-      to: "447490671790",
+      to: "000000000000",
       from: "+447449794153"
     )
   end
