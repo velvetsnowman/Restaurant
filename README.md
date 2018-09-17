@@ -18,32 +18,29 @@ To play around with my code follow these instructions:
 * In your terminal in the directory you wish run
 
 ```
-* git clone https://github.com/velvetsnowman/notesapp.git
-* cd notesapp
+* git clone https://github.com/velvetsnowman/Restaurant.git
+* cd Restaurant
 ```
 ```
 * irb
-* require './lib/notebook.rb'
-* notebook = Notebook.new
-* notebook.notebook_menu
+* require './lib/menu.rb'
+* my_resto = Menu.new
+```
+* If you wish to add some of your own dishes: 
+```
+* my_resto.add_to_menu("your dish name", price)
 
 ```
-
-* You should see something like this:
-
+* To order from the menu:
 ```
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-1. INPUT A NEW NOTE
-2. SHOW ME ALL MY NOTES
-3. PICK A NOTE
-4. SAVE MY NOTES
-5. LOAD MY SAVED NOTES
-9. EXIT
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* my_resto.order
 ```
-* Within your terminal, type the number of the option you wish to choose, I recommend inputting `1`
+* Follow the instructions and order!
 
 
+**NOTES**
+
+Within this commandline APP I use the Twilio Gem to send text messages when the order is confirmed. If you wish, insert your number into Restaurant/lib/confirmation.rb, line 17, for a full user experience!
 
 ```
 As a customer
