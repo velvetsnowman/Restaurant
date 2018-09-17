@@ -9,7 +9,14 @@ class Menu
   def initialize( dish = Dish, order = Order )
     @dish = dish
     @order = order
-    @menu_items = []
+    @menu_items = [
+      {:name=>"chicken", :price=>3},
+      {:name=>"lamb", :price=>3.4}
+      {:name=>"beef", :price=>3.34}
+      {:name=>"vegetarian", :price=>23.7}
+      {:name=>"vegan", :price=>1.80}
+      {:name=>"gluten free", :price=>4.5}
+    ]
   end
 
   def order
